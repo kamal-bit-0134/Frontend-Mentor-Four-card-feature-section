@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    background: url("./images/bgim.jpg");
+    background-size: cover;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    padding-bottom: 0px;
+    background-color: white;
+    /* background-color: #ffffffd6; */
+
+
+
+}
+
+.headText{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.headText{
+    text-align:center;
+    color: hsl(229, 6%, 66%);
+    max-width: 450px;
+    flex-shrink: 1;
+
+}
+
+.servContainer{
+    display: flex;
+    align-items:center;
+    min-height:500px
+}
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    box-sizing:border-box;
+    min-height: 200px;
+    max-width: 262px;
+    margin:24px 28px;
+    padding: 10px 14px;
+    padding-left: 20px;
+    font-size: 15px;
+    /* box-shadow: 0 0 10px #cad0f1; */
+    box-shadow: 0 5px 10px #cad0f1,
+              -2px 2px 3px rgba(0, 0, 0, 0.1),
+              2px 2px 3px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.twoservWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service.temp{
+    margin:12px 0px;
+
+}
+
+
+.desc {
+    color: darkgray;
+}
+
+
+svg{
+    align-self:flex-end;
+    margin-top: auto;
+    padding: 15px 17px;
+    padding-right: 3px;
+
+}
+
+.fl{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc, h3 {
+    margin: 6px 0px;
+}
+
+/* Colored borders */
+.first{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.second{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.third{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.fourth{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.name{
+    color: hsl(234, 12%, 34%);
+}
+.lightG{
+    color: hsl(229, 6%, 66%);
+}
+.fonWg{
+    font-weight: 900;
+    font-size: 23px;
+    margin-bottom: 12px;
+    margin-top: 3px;
+}
+.fntSzHeadText{
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #494646;
+}
+
+.ftr{
+    position: fixed;
+    display: contents;
+}
+
+p.attribution.pftr{
+    margin-top: 4px; 
+    position: fixed; 
+    bottom: 9px;
+}
+
+/* 517px */
+/* 415px */
+@media only screen and (max-width: 517px) {
+    /* CSS rules for mobile devices */
+    .servContainer{
+        /* background-color: aliceblue; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .service{
+        /* width:100%; */
+        /* height: 200px;
+        width: 280px; */
+        height: 220px;
+        max-width: 85%;
+        align-self: center;
+    }
+    .container{
+        height: auto;
+        background-color: white;
+        background: white;
+        
+    }
+    .box{
+        box-shadow: none;
+    }
+
+    p.attribution.pftr{
+        margin-top: 4px; 
+        position: relative; 
+        bottom: 9px;
+    }
+    
+  }
+
+  
